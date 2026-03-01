@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Analyse Académique</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        .card-hover:hover { transform: translateY(-5px); transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">📊 Analyse Académique</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Dashboard</a>
+                <a class="nav-link" href="matieres.html">Matières</a>
+               <a class="nav-link" href="etudiant.html">Étudiants</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Tableau de Bord Global</h1>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary h-100 shadow-sm card-hover">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Moyenne Générale</h5>
+                        <p class="card-text display-4 fw-bold">14.5<span class="fs-4">/20</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success h-100 shadow-sm card-hover">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Total Étudiants</h5>
+                        <p class="card-text display-4 fw-bold">150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning h-100 shadow-sm card-hover">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Taux de Réussite</h5>
+                        <p class="card-text display-4 fw-bold">92%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white fw-bold">Progression Moyenne sur l'année</div>
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/1000x300?text=Graphique+Progression+Annuellle" class="img-fluid rounded" alt="Graphique de progression">
+                        <p class="text-muted mt-2">Visualisation des tendances trimestrielles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+    <div class="col-12">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-white border-0 pt-4">
+                <h5 class="card-title fw-bold text-gray-800">Évolution des Performances Académiques</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="performanceChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
